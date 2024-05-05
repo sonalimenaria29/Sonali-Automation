@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-01T09:11:47 IST" name="Suite" finished-at="2024-05-01T09:12:16 IST" duration-ms="29600">
+    <groups>
+    </groups>
+    <test started-at="2024-05-01T09:11:47 IST" name="Test" finished-at="2024-05-01T09:12:16 IST" duration-ms="29600">
+      <class name="testCases.VerifyRegistrationTestCases">
+        <test-method signature="verifyRegistrationWithValidData()[pri:0, instance:testCases.VerifyRegistrationTestCases@6fd83fc1]" started-at="2024-05-01T09:11:47 IST" name="verifyRegistrationWithValidData" finished-at="2024-05-01T09:12:05 IST" duration-ms="18368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegistrationWithValidData -->
+      </class> <!-- testCases.VerifyRegistrationTestCases -->
+      <class name="testCases.VerifyLoginTestCased">
+        <test-method signature="verifyLoginWithValidData()[pri:0, instance:testCases.VerifyLoginTestCased@5b03b9fe]" started-at="2024-05-01T09:12:05 IST" name="verifyLoginWithValidData" finished-at="2024-05-01T09:12:16 IST" duration-ms="11136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidData -->
+      </class> <!-- testCases.VerifyLoginTestCased -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

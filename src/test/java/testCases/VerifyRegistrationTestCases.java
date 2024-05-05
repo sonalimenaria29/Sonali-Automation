@@ -49,8 +49,48 @@ public class VerifyRegistrationTestCases extends baseClass{
 						
 			driver.quit();
 			
+			System.out.println(email);
+			
 			
 	}
 
 	
+
+	@Test	
+	public void verifyRegistrationWithInValidData() throws IOException, InterruptedException {
+			
+			driverInitiatization();
+			
+			driver.manage().window().maximize();
+			
+			driver.get("https://naveenautomationlabs.com/opencart/");
+			
+			RegistrationPageObject rpo= new RegistrationPageObject(driver);
+			
+			
+			rpo.clickOnmyAccount().click();
+			Thread.sleep(1000);
+			rpo.clickOnRegistration().click();
+			Thread.sleep(1000);
+			rpo.ClickOnContinue().click();
+			
+			Thread.sleep(1000);
+			
+			SoftAssert sa = new SoftAssert();
+			
+			String fnactual =driver.findElement(By.xpath("//div[text()='First Name must be between 1 and 32 characters!']")).getText();
+			String fnexpected = "First Name must be between 1 and 32 characters!";
+			sa.assertEquals(fnactual, fnexpected);
+			
+			String lnactual =driver.findElement(By.xpath("//div[text()='Last Name must be between 1 and 32 characters!']")).getText();
+			String lnexpected = "Last Name must be between 1 and 32 characters!";
+			sa.assertEquals(lnactual, lnexpected);
+			
+			sa.assertAll();
+						
+			driver.quit();
+			
+			
+	
 	}
+}
